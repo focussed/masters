@@ -7,15 +7,17 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({
 	// add test classes here
-	RegisterTests.class,
-	RequestToBerthTests.class,
-	RoughSeas.class,
-	LeavePort.class,
-	LeavePort4Ships.class,
 	AttemptsAtCommsNotRegYet.class,
 	CruiserTests.class,
+	LeavePort.class,
+	LeavePort2Ships.class,
+	LeavePort4Ships.class,
+	RegisterTests.class,
+	RequestToBerthTests.class,
+	RogueCommands.class,
+	RoughSeas.class,
 	SignalandNackTests.class,
-	CodeCoverageTest.class
+	CodeCoverageTest.class,
 })
 
 public class AllTests {
