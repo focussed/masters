@@ -239,7 +239,7 @@ public class Port extends Thread {
 					this.transmit(currentShip, Message.PILOT_READY_TO_BOARD, "");
 				} else {
 					this.transmit(currentShip, Message.NACK, "This is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case NAVIGATING_UNDER_PILOT:
@@ -249,7 +249,7 @@ public class Port extends Thread {
 					currentShip.setShipsState(ShipState.NAVIGATING);
 				} else {
 					this.transmit(currentShip, Message.NACK, "This is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case BERTHED:
@@ -259,7 +259,7 @@ public class Port extends Thread {
 					this.transmit(currentShip, Message.ACK, ""); // acknowledge
 				} else {
 					this.transmit(currentShip, Message.NACK, "This op is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case DEBERTHED:
@@ -293,7 +293,7 @@ public class Port extends Thread {
 					}
 				} else {
 					this.transmit(currentShip, Message.NACK, "This op is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case ANCHORED:
@@ -302,7 +302,7 @@ public class Port extends Thread {
 					this.transmit(currentShip, Message.ACK, ""); // acknowledge
 				} else {
 					this.transmit(currentShip, Message.NACK, "This op is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case LEFT_PORT:
@@ -312,7 +312,7 @@ public class Port extends Thread {
 					this.transmit(currentShip, Message.ACK, ""); // acknowledge
 				} else {
 					this.transmit(currentShip, Message.NACK, "This op is not allowed.  Your ship is should be "
-							+ currentShip.getShipsState() + ".  Wait for further intructions");
+							+ currentShip.getShipsState() + ".  Wait for further instructions");
 				}
 				break;
 			case ACK:
